@@ -1,9 +1,10 @@
-import { forwardRef, Module } from '@nestjs/common';
-import { TypeOrmModule } from '@nestjs/typeorm';
-import { TeamService } from './team.service';
-import { TeamController } from './team.controller';
+import { Module, forwardRef } from '@nestjs/common';
+
 import { Team } from './team.model';
+import { TeamController } from './team.controller';
 import { TeamResolver } from './team.resolver';
+import { TeamService } from './team.service';
+import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserModule } from '../users/user.module';
 
 @Module({

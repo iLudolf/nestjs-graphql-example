@@ -5,7 +5,6 @@ import {
   Parent,
   Query,
   ResolveField,
-  ResolveProperty,
   Resolver,
 } from '@nestjs/graphql';
 import { Team, TeamInput } from './team.model';
